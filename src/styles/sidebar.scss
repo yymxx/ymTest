@@ -1,0 +1,61 @@
+.sidebar-container {
+  transition: width 0.28s;
+  .el-menu-item {
+    color: #2095ed !important;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e5e5e5;
+    .icon-circle {
+      position: absolute;
+      left: -15px;
+      color: #2095ed;
+      &::after {
+        content: '●';
+      }
+    }
+  }
+
+  .app-link {
+    .is-active {
+      color: #fff !important;
+      background-color: #2095ed !important;
+      .icon-circle {
+        color: #fff;
+      }
+    }
+  }
+
+  .el-submenu {
+    .el-submenu__title {
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  
+    .el-menu-item {
+      height: 42px;
+      line-height: 42px;
+    }
+  }
+
+  .el-menu--collapse {
+    .el-submenu__title {
+      .el-submenu__icon-arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+.el-menu--vertical {
+  .el-menu {
+    .el-menu-item {
+      height: 42px;
+      line-height: 42px;
+    }
+
+    .is-active {
+      background-color: #2095ed !important;
+    }
+  }
+}
